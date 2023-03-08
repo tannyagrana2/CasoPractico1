@@ -38,7 +38,7 @@ public class PeliculaController {
     public String listar(Model model) {
         List<Pelicula> listaPeliculas = peliculaService.listar();
         model.addAttribute("titulo", "Tabla de Películas");
-        model.addAttribute("pelicula", listaPeliculas);
+        model.addAttribute("peliculas", listaPeliculas);
         return "peliculas";
     }
     
